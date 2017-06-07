@@ -1,0 +1,7 @@
+apps:
+  - script   : './server/server.js'
+    name     : 'Boilerplate API'
+    exec_mode: 'cluster'
+    instances: 'max'
+    watch    : ['server/']
+    ignore_watch: ['newrelic_agent.log', 'doc/', '.idea/', 'node-modules', '.git/']
